@@ -1,6 +1,10 @@
 name = "unifi-cloudflare-ddns"
 main = "src/index.js"
 compatibility_date = "2023-04-23"
+workers_dev = true
 routes = [
     { pattern = "ddns.cklein.us", custom_domain = true }
 ]
+# wrangler.toml (wrangler v3.78.6^)
+[observability]
+enabled = true
